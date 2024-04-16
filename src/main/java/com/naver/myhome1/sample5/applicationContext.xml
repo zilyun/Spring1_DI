@@ -4,12 +4,21 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
 	http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-	<bean id="m2" class="com.naver.myhome1.sample4.MessageBeanImpl">
+	<bean id="outputter" class="com.naver.myhome1.sample5.FileOutputter">
+		<property name="filePath">
+			<value>out2.txt</value>
+		</property>
+	</bean>
+
+	<bean id="m3" class="com.naver.myhome1.sample5.MessageBeanImpl">
 	 	<constructor-arg index="0">
 			<value>Spring</value>
 		</constructor-arg>
 		<property name="greeting">
-			<value>안녕하세요!</value>
+			<value>Hello!</value>
+		</property>
+		<property name="outputter">
+			<ref bean="outputter" />
 		</property>
 	</bean>
 	
