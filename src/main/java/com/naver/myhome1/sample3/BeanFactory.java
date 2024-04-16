@@ -1,4 +1,4 @@
-package com.naver.myhome.sample3;
+package com.naver.myhome1.sample3;
 
 public class BeanFactory {
 	public Object getBean(String beanName) {

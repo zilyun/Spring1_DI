@@ -1,4 +1,4 @@
-package com.naver.myhome.sample3;
+package com.naver.myhome1.sample3;
 
 public interface MessageBean {
 	// public abstract 가 생략된 추상메서드 정의
